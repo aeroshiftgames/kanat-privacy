@@ -182,7 +182,7 @@
       <div><strong>Geliştirici:</strong> AeroShift Games</div>
       <div><strong>İletişim:</strong> <a href="mailto:aeroshiftgames@gmail.com">aeroshiftgames@gmail.com</a></div>
       <div><strong>Yürürlük tarihi:</strong> 20 Ağustos 2026</div>
-      <div><strong>Son güncelleme:</strong> 20 Ağustos 2026</div>
+      <div><strong>Son güncelleme:</strong> 28 Ekim 2026</div>
     </div>
 
     <h2>1. Genel Bakış</h2>
@@ -195,8 +195,8 @@
 
     <p>
       Oyunun temel ilerleme verileri cihazınızda yerel olarak saklanır.
-      Uygulama; reklamların gösterilmesi için Unity Ads ve oyun içi coin
-      satın alımlarının gerçekleştirilmesi için Google Play Billing hizmetlerini kullanır.
+      Uygulama; reklamların gösterilmesi için Unity LevelPlay reklam aracılık platformunu (Unity Ads ve ironSource dahil), oyun içi satın alımlar için Google Play Billing'i
+      ve isteğe bağlı skor tablosu, başarımlar ve bulut kayıt için Google Play Games Hizmetleri'ni kullanır.
       Bu üçüncü taraf hizmetler kendi gizlilik politikaları kapsamında belirli teknik verileri işleyebilir.
     </p>
 
@@ -214,14 +214,34 @@
       <li>Yükseltmeler</li>
       <li>Günlük görev ilerlemesi</li>
       <li>Giriş serisi</li>
+      <li>Oyuncu seviyesi, deneyim puanı, başarımlar ve oyun istatistikleri (ör. oynanan tur, toplanan coin)</li>
+      <li>Reklamsız ve Başlangıç Paketi gibi satın alınan haklar</li>
       <li>Ses, müzik, titreşim ve dil tercihleri</li>
       <li>Satın alma işlemlerinin iki kez ödüllendirilmesini önlemek için kullanılan teknik satın alma belirteçleri</li>
     </ul>
 
     <p>
-      AeroShift Games'in bu oyun için bir kullanıcı hesabı veya bulut kayıt sunucusu bulunmamaktadır.
-      Bu oyun verileri AeroShift Games sunucularına gönderilmez.
+      AeroShift Games'in bu oyun için bir kullanıcı hesabı veya kendi bulut kayıt sunucusu bulunmamaktadır.
+      Bu oyun verileri AeroShift Games sunucularına gönderilmez. Google Play Games'e giriş yaparsanız
+      ilerlemenizin bir kopyası Google tarafından Google hesabınızda saklanabilir (aşağıya bakın).
     </p>
+
+    <h3>Google Play Games Hizmetleri (isteğe bağlı)</h3>
+    <p>
+      Kanat'ın 2.0 sürümü, <strong>Google Play Games Hizmetleri</strong> ile skor tablosu, başarımlar ve
+      bulut kayıt özelliklerini destekler. Play Games'e giriş isteğe bağlıdır; oyun girişsiz de tamamen oynanabilir.
+      Giriş yaptığınızda Google; Play Games oyuncu profilinizi (oyuncu adı ve kimliği), skorlarınızı,
+      açtığınız başarımları ve bulut kayıt dosyanızı (yukarıda listelenen oyun ilerlemesinin bir kopyası,
+      <code>kanat_save</code> adlı “Kayıtlı oyun”) kendi sistemlerinde, Google hesabınıza bağlı olarak saklar.
+      Bu veriler Google'ın gizlilik politikası kapsamında işlenir; AeroShift Games'in ayrı bir sunucusuna gönderilmez.
+      Play Games görünürlük ve profil ayarlarınızı Play Games uygulamasından yönetebilir, kayıtlı oyun verilerinizi
+      Google hesabınızdan silebilirsiniz.
+    </p>
+    <p>
+      Google gizlilik politikası:
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a>
+    </p>
+
 
     <h3>Yedek kodu</h3>
 
@@ -231,21 +251,25 @@
       Bu kod yalnızca cihazınızda oluşturulur. AeroShift Games'e otomatik olarak gönderilmez.
     </p>
 
-    <h2>3. Reklamlar — Unity Ads</h2>
+    <h2>3. Reklamlar — Unity LevelPlay ve Unity Ads</h2>
 
     <p>
-      Kanat, reklam hizmeti sağlayıcısı olarak <strong>Unity Ads</strong> kullanır.
+      Kanat, reklamları <strong>Unity LevelPlay</strong> reklam aracılık (mediation) platformu üzerinden gösterir.
+      LevelPlay, her reklam gösterimi için reklamı <strong>Unity Ads</strong> ve <strong>ironSource Ads</strong>
+      gibi bağlı reklam ağları arasından seçer. Reklamlar genel kitleye uygun içerik derecelendirmesiyle sınırlandırılmıştır.
     </p>
 
-    <p>Oyunda iki reklam biçimi bulunur:</p>
+    <p>Oyunda üç reklam biçimi bulunur:</p>
 
     <ul>
       <li><strong>Rewarded reklam:</strong> Oyuncunun isteğe bağlı olarak reklam izleyip oyuna devam edebilmesi için.</li>
       <li><strong>Interstitial reklam:</strong> Belirli oyun turları arasında gösterilen tam ekran reklamlar.</li>
+      <li><strong>Banner reklam:</strong> Yalnızca menü ekranlarında, ekranın altında gösterilen küçük reklam (oyun sırasında gösterilmez).</li>
     </ul>
+    <p>Reklamsız paketini satın alan oyuncular interstitial ve banner reklamları görmez; rewarded reklamlar yalnızca isteğe bağlı olarak izlenir.</p>
 
     <p>
-      Unity Ads; reklam sunumu, sahtekârlığın önlenmesi, reklam performansının ölçülmesi
+      Unity LevelPlay ve bağlı reklam ağları; reklam sunumu, sahtekârlığın önlenmesi, reklam performansının ölçülmesi
       ve ilgili reklam işlevlerinin sağlanması amacıyla, geçerli yasalara ve yapılandırmaya
       bağlı olarak bazı teknik verileri işleyebilir.
     </p>
@@ -289,7 +313,8 @@
     <h2>4. Oyun İçi Satın Almalar — Google Play Billing</h2>
 
     <p>
-      Kanat içerisinde yalnızca oyun içi <strong>coin paketleri</strong> gerçek para karşılığında satın alınabilir.
+      Kanat içerisinde gerçek para karşılığında oyun içi <strong>coin paketleri</strong> ile tek seferlik
+      <strong>Reklamsız</strong> (tur aralarındaki reklamları kaldırır) ve <strong>Başlangıç Paketi</strong> satın alınabilir.
       Tüm satın alma işlemleri Google Play Billing üzerinden gerçekleştirilir.
     </p>
 
@@ -406,8 +431,8 @@
     </p>
 
     <ul>
-      <li><strong>Unity Technologies</strong> — reklam gösterimi ve reklam ölçümü</li>
-      <li><strong>Google LLC</strong> — Google Play Billing ve oyun içi satın alma işlemleri</li>
+      <li><strong>Unity Technologies</strong> — reklam gösterimi ve reklam ölçümü (Unity Ads ve Unity LevelPlay / ironSource reklam aracılık platformu; reklamlar bu platform üzerinden birden fazla reklam ağına dağıtılabilir)</li>
+      <li><strong>Google LLC</strong> — Google Play Billing ve oyun içi satın alma işlemleri; Google Play Games Hizmetleri (isteğe bağlı skor tablosu, başarımlar, bulut kayıt)</li>
     </ul>
 
     <h2>11. Veri Saklama ve Silme</h2>
@@ -505,7 +530,7 @@
       <div><strong>Developer:</strong> AeroShift Games</div>
       <div><strong>Contact:</strong> <a href="mailto:aeroshiftgames@gmail.com">aeroshiftgames@gmail.com</a></div>
       <div><strong>Effective date:</strong> 20 August 2026</div>
-      <div><strong>Last updated:</strong> 20 August 2026</div>
+      <div><strong>Last updated:</strong> 28 October 2026</div>
     </div>
 
     <h2>1. Overview</h2>
@@ -518,8 +543,8 @@
 
     <p>
       Core game progress is stored locally on your device.
-      The application uses Unity Ads for advertising and Google Play Billing
-      for purchases of in-game coin packs.
+      The application uses the Unity LevelPlay ad mediation platform (including Unity Ads and ironSource) for advertising, Google Play Billing for in-app purchases
+      and, optionally, Google Play Games Services for leaderboards, achievements and cloud save.
       These third-party services may process certain technical information
       under their own privacy policies.
     </p>
@@ -536,14 +561,33 @@
       <li>Upgrades</li>
       <li>Daily task progress</li>
       <li>Login streak</li>
+      <li>Player level, experience points, achievements and gameplay statistics (e.g. runs played, coins collected)</li>
+      <li>Purchased entitlements such as No Ads and the Starter Pack</li>
       <li>Sound, music, vibration and language preferences</li>
       <li>Technical purchase tokens used to prevent duplicate purchase rewards</li>
     </ul>
 
     <p>
-      AeroShift Games does not operate a user account or cloud-save server for Kanat.
-      This game progress is not uploaded to an AeroShift Games server.
+      AeroShift Games does not operate a user account or its own cloud-save server for Kanat.
+      This game progress is not uploaded to an AeroShift Games server. If you sign in to Google Play Games,
+      a copy of your progress may be stored by Google in your Google account (see below).
     </p>
+
+    <h3>Google Play Games Services (optional)</h3>
+    <p>
+      Version 2.0 of Kanat supports leaderboards, achievements and cloud save through
+      <strong>Google Play Games Services</strong>. Signing in to Play Games is optional; the game is fully playable without it.
+      When you sign in, Google stores your Play Games player profile (player name and ID), your scores, unlocked
+      achievements and your cloud save (a copy of the game progress listed above, a “Saved game” named
+      <code>kanat_save</code>) on its own systems, linked to your Google account. This data is processed under
+      Google's privacy policy and is not sent to a separate AeroShift Games server. You can manage your Play Games
+      visibility and profile in the Play Games app and delete saved game data from your Google account.
+    </p>
+    <p>
+      Google privacy policy:
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a>
+    </p>
+
 
     <h3>Backup code</h3>
 
@@ -553,10 +597,12 @@
       The code is created locally and is not automatically sent to AeroShift Games.
     </p>
 
-    <h2>3. Advertising — Unity Ads</h2>
+    <h2>3. Advertising — Unity LevelPlay and Unity Ads</h2>
 
     <p>
-      Kanat uses <strong>Unity Ads</strong> as its advertising service provider.
+      Kanat shows ads through the <strong>Unity LevelPlay</strong> ad mediation platform.
+      For each ad, LevelPlay selects an ad from connected ad networks such as <strong>Unity Ads</strong> and
+      <strong>ironSource Ads</strong>. Ads are restricted to content ratings suitable for a general audience.
     </p>
 
     <p>The game contains:</p>
@@ -564,11 +610,13 @@
     <ul>
       <li><strong>Rewarded ads:</strong> optional advertisements that may allow the player to continue a run.</li>
       <li><strong>Interstitial ads:</strong> full-screen advertisements shown occasionally between game runs.</li>
+      <li><strong>Banner ads:</strong> a small ad at the bottom of the screen, shown only on menu screens (never during gameplay).</li>
     </ul>
+    <p>Players who buy No Ads do not see interstitial or banner ads; rewarded ads are always optional.</p>
 
     <p>
       Depending on configuration, applicable law and device settings,
-      Unity Ads may process technical information for ad delivery,
+      Unity LevelPlay and the connected ad networks may process technical information for ad delivery,
       fraud prevention, measurement and related advertising functionality.
     </p>
 
@@ -611,7 +659,8 @@
     <h2>4. In-App Purchases — Google Play Billing</h2>
 
     <p>
-      Kanat offers only in-game <strong>coin packs</strong> as real-money purchases.
+      Kanat offers in-game <strong>coin packs</strong> and the one-time <strong>No Ads</strong> (removes the ads
+      between runs) and <strong>Starter Pack</strong> purchases for real money.
       Purchases are processed through Google Play Billing.
     </p>
 
@@ -732,8 +781,8 @@
     </p>
 
     <ul>
-      <li><strong>Unity Technologies</strong> — advertising delivery and measurement</li>
-      <li><strong>Google LLC</strong> — Google Play Billing and in-app purchases</li>
+      <li><strong>Unity Technologies</strong> — advertising delivery and measurement (Unity Ads and the Unity LevelPlay / ironSource ad mediation platform; ads may be served through several ad networks via this platform)</li>
+      <li><strong>Google LLC</strong> — Google Play Billing and in-app purchases; Google Play Games Services (optional leaderboards, achievements, cloud save)</li>
     </ul>
 
     <h2>11. Data Retention and Deletion</h2>
